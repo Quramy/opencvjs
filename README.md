@@ -1,4 +1,4 @@
-# OpenCV.js
+# OpenCV wasm [![CircleCI](https://circleci.com/gh/Quramy/opencvjs.svg?style=svg)](https://circleci.com/gh/Quramy/opencvjs)
 
 This is a JavaScript binding that exposes OpenCV library to the web. This project is made possible by support of Intel corporation. Currently, this is based on OpenCV 3.1.0.
 
@@ -64,7 +64,13 @@ At the time of writing, the current version of Emscripten does not support WebAs
     python make.py --wasm
   ```
 
+#### Using docker
 
+1. Get the source code (just like above)
+
+```
+$ docker-compose run emcc
+```
 
 ### Tests
 Test suite contains several tests and examples demonstrating how the API can be used. Run the tests by launching test/tests.html file usig a browser.
