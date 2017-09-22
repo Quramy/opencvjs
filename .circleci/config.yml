@@ -7,12 +7,17 @@ jobs:
     working_directory: ~/repo
 
     steps:
+
       - checkout
+
       - run:
           name: get src
           command: |
             git clone https://github.com/opencv/opencv.git
+            cd opencv
             git checkout 3.1.0
+            cd ..
+
       - run:
           name: build wasm
           command: |
