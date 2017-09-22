@@ -12,11 +12,12 @@ clArguments = parser.parse_args()
 # Startup
 exec(open(os.path.expanduser('~/.emscripten'), 'r').read())
 
-try:
-    EMSCRIPTEN_ROOT
-except:
-    print "ERROR: Missing EMSCRIPTEN_ROOT (which should be equal to emscripten's root dir) in ~/.emscripten"
-    sys.exit(1)
+EMSCRIPTEN_ROOT = os.getenv('EMSCRIPTEN')
+# try:
+#     EMSCRIPTEN_ROOT
+# except:
+#     print "ERROR: Missing EMSCRIPTEN_ROOT (which should be equal to emscripten's root dir) in ~/.emscripten"
+#     sys.exit(1)
 
 #Popen('source ' + emenv)
 sys.path.append(EMSCRIPTEN_ROOT)
