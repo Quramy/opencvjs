@@ -11,7 +11,7 @@ jobs:
       - run:
           name: get src
           command: |
-            git clone opencv/opencv
+            git clone https://github.com/opencv/opencv.git
             git checkout 3.1.0
       - run:
           name: build wasm
