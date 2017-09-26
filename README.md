@@ -1,12 +1,8 @@
-# OpenCV wasm [![CircleCI](https://circleci.com/gh/Quramy/opencvjs.svg?style=svg)](https://circleci.com/gh/Quramy/opencvjs)
+# OpenCV.js [![CircleCI](https://circleci.com/gh/Quramy/opencvjs.svg?style=svg)](https://circleci.com/gh/Quramy/opencvjs)
 
 This is a JavaScript binding that exposes OpenCV library to the web. This project is made possible by support of Intel corporation. Currently, this is based on OpenCV 3.1.0.
 
 ### How to Build
-
-You can build two different versions of OpenCV.js: asm.js or WebAssembly (experimental). If you want to build the later, you will need the "incoming" version of Emscripten.
-
-#### asm.js version (default)
 
 1. Get the source code
 
@@ -17,58 +13,11 @@ You can build two different versions of OpenCV.js: asm.js or WebAssembly (experi
   cd opencv
   git checkout 3.1.0
   ```
-2. Install emscripten. You can obtain emscripten by using [Emscripten SDK](https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html).
 
-  ```
-  ./emsdk update
-  ./emsdk install sdk-master-64bit --shallow
-  ./emsdk activate sdk-master-64bit
-  source ./emsdk_env.sh
-  ```
-3. Patch Emscripten & Rebuild.
+2. Execute docker
 
-  ```
-  patch -p1 < PATH/TO/patch_emscripten.diff -d emscripten/master
-  ./emsdk install sdk-master-64bit --shallow
-  ```
-
-4. Compile OpenCV and generate bindings by executing make.py script.
-
-  ```
-    python make.py
-  ```
-
-#### WebAssembly version (experimental)
-
-1. Get the source code (just like above)
-
-2. Install the "incoming" branch of emscripten. You can obtain emscripten by using [Emscripten SDK](https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html).
-At the time of writing, the current version of Emscripten does not support WebAssembly yet, so you will need to install the "incoming" branch.
-
-  ```
-  ./emsdk update
-  ./emsdk install sdk-incoming-64bit --shallow
-  ./emsdk activate sdk-incoming-64bit
-  source ./emsdk_env.sh
-  ```
-3. Patch Emscripten & Rebuild.
-
-  ```
-  patch -p1 < PATH/TO/patch_emscripten.diff -d emscripten/incoming
-  ./emsdk install sdk-incoming-64bit --shallow
-  ```
-
-4. Compile OpenCV and generate bindings by executing make.py script.
-
-  ```
-    python make.py --wasm
-  ```
-
-#### Using docker
-
-1. Get the source code (just like above)
-
-```
+```sh
+$ docker-compose build
 $ docker-compose run emcc
 ```
 
