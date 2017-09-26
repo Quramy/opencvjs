@@ -159,6 +159,9 @@ EMSCRIPTEN_BINDINGS(Utils) {
     register_vector<cv::KeyPoint>("KeyPointVector");
     register_vector<cv::Rect>("RectVector");
     register_vector<cv::Point2f>("Point2fVector");
+    register_vector<cv::DMatch>("DMatchVector");
+    register_vector<std::vector<cv::DMatch>>("DMatchVectorVector");
+    register_vector<std::vector<char>>("CharVectorVector");
 
     emscripten::class_<cv::TermCriteria>("TermCriteria")
         .constructor<>()

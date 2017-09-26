@@ -799,20 +799,20 @@ if __name__ == "__main__":
                     "../opencv/Modules/core/include/opencv2/core/types.hpp",
                     "../opencv/Modules/core/include/opencv2/core/ocl.hpp",
                     "../opencv/Modules/core/include/opencv2/core/mat.hpp",
-                    "../opencv/Modules/flann/include/opencv2/flann.hpp",
-                    "../opencv/Modules/flann/include/opencv2/flann/miniflann.hpp",
-                    "../opencv/Modules/ml/include/opencv2/ml.hpp",
-                    "../opencv/Modules/photo/include/opencv2/photo.hpp",
+                    # "../opencv/Modules/flann/include/opencv2/flann.hpp",
+                    # "../opencv/Modules/flann/include/opencv2/flann/miniflann.hpp",
+                    # "../opencv/Modules/ml/include/opencv2/ml.hpp",
+                    # "../opencv/Modules/photo/include/opencv2/photo.hpp",
                     "../opencv/Modules/imgproc/include/opencv2/imgproc.hpp",
-                    "../opencv/Modules/shape/include/opencv2/shape.hpp",
-                    "../opencv/Modules/shape/include/opencv2/shape/hist_cost.hpp",
-                    "../opencv/Modules/shape/include/opencv2/shape/shape_distance.hpp",
-                    "../opencv/Modules/shape/include/opencv2/shape/shape_transformer.hpp",
+                    # "../opencv/Modules/shape/include/opencv2/shape.hpp",
+                    # "../opencv/Modules/shape/include/opencv2/shape/hist_cost.hpp",
+                    # "../opencv/Modules/shape/include/opencv2/shape/shape_distance.hpp",
+                    # "../opencv/Modules/shape/include/opencv2/shape/shape_transformer.hpp",
                     "../opencv/Modules/features2d/include/opencv2/features2d.hpp",
-                    "../opencv/Modules/video/include/opencv2/video/tracking.hpp",
-                    "../opencv/Modules/video/include/opencv2/video/background_segm.hpp",
-                    "../opencv/Modules/objdetect/include/opencv2/objdetect.hpp",
-                    "../opencv/Modules/imgcodecs/include/opencv2/imgcodecs.hpp"
+                    # "../opencv/Modules/video/include/opencv2/video/tracking.hpp",
+                    # "../opencv/Modules/video/include/opencv2/video/background_segm.hpp",
+                    # "../opencv/Modules/objdetect/include/opencv2/objdetect.hpp",
+                    # "../opencv/Modules/imgcodecs/include/opencv2/imgcodecs.hpp"
                     ]
 
     if len(sys.argv) > 1:

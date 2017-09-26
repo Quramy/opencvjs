@@ -209,21 +209,21 @@ try:
                 'bindings.bc',
                 os.path.join('lib','libopencv_core.a'),
                 os.path.join('lib','libopencv_imgproc.a'),
-                os.path.join('lib','libopencv_imgcodecs.a'),
+                # os.path.join('lib','libopencv_imgcodecs.a'),
 
-                os.path.join('lib','libopencv_ml.a'),
-                os.path.join('lib','libopencv_flann.a'),
-                os.path.join('lib','libopencv_objdetect.a'),
+                # os.path.join('lib','libopencv_ml.a'),
+                # os.path.join('lib','libopencv_flann.a'),
+                # os.path.join('lib','libopencv_objdetect.a'),
                 os.path.join('lib','libopencv_features2d.a') ,
 
-                os.path.join('lib','libopencv_shape.a'),
-                os.path.join('lib','libopencv_photo.a'),
-                os.path.join('lib','libopencv_video.a'),
+                # os.path.join('lib','libopencv_shape.a'),
+                # os.path.join('lib','libopencv_photo.a'),
+                # os.path.join('lib','libopencv_video.a'),
 
                 # external libraries
                 # os.path.join('3rdparty', 'lib', 'liblibjpeg.a'),
                 # os.path.join('3rdparty', 'lib', 'liblibpng.a'),
-                os.path.join('3rdparty', 'lib', 'libzlib.a'),
+                # os.path.join('3rdparty', 'lib', 'libzlib.a'),
                 #os.path.join('3rdparty', 'lib', 'liblibtiff.a'),
                 #os.path.join('3rdparty', 'lib', 'liblibwebp.a'),
                 ]

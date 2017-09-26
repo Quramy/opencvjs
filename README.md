@@ -31,12 +31,12 @@ Currently, the following modules are supported. You can modify the make script t
 
 1. Core
 2. Image processing
-3. Photo
-4. Shape
-5. Video
-6. Object detection
+~~3. Photo~~
+~~4. Shape~~
+~~5. Video~~
+~~6. Object detection~~
 7. Features framework
-8. Image codecs
+~~8. Image codecs~~
 
 ### At a glance
 The following example demonstrates how to apply a gaussian blur filter on an image. Note that everything is wrapped in a JavaScript module ('cv').
